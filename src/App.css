@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+/* For Chrome, Safari, and other WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track (scrollbar background) */
+  border-radius: 10px; /* Make the track rounded */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle (thumb) */
+  border-radius: 20px; /* Round the scrollbar handle */
+  border: 3px solid #f1f1f1; /* Padding around scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; /* Hover effect for scrollbar handle */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* "thin" for a thinner scrollbar */
+  scrollbar-color: #000000 #dcd9d9; /* Scrollbar color and track color */
+}
